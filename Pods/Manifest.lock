@@ -1,0 +1,26 @@
+PODS:
+  - DGCharts (5.0.0):
+    - DGCharts/Core (= 5.0.0)
+  - DGCharts/Core (5.0.0)
+  - Nimble (13.0.0)
+  - Quick (7.3.0)
+
+DEPENDENCIES:
+  - DGCharts
+  - Nimble
+  - Quick
+
+SPEC REPOS:
+  trunk:
+    - DGCharts
+    - Nimble
+    - Quick
+
+SPEC CHECKSUMS:
+  DGCharts: 6e0cf2644e8f81ad13f04caa8bc18502870a1c54
+  Nimble: 97d90931cca412a23224ff29e258809f75c258f7
+  Quick: d32871931c05547cb4e0bc9009d66a18b50d8558
+
+PODFILE CHECKSUM: de406cf79b639919d798d0c4f1fe4cdb4b7e4f9f
+
+COCOAPODS: 1.12.1

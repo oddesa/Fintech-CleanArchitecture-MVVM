@@ -1,0 +1,1107 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16586F20B5ED9AF1E34F4CEA /* Pods_FintechCleanArchitectureMVVMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C399FF433F752CC54E75714 /* Pods_FintechCleanArchitectureMVVMTests.framework */; };
+		3C0F9B4F2B1C223C00335312 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9B4D2B1C223C00335312 /* HomeViewController.swift */; };
+		3C0F9B502B1C223C00335312 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0F9B4E2B1C223C00335312 /* HomeViewController.xib */; };
+		3C0F9B552B1C2FCB00335312 /* SpendingChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9B542B1C2FCB00335312 /* SpendingChartData.swift */; };
+		3C0F9BA92B1C326C00335312 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9BA82B1C326C00335312 /* String+Extension.swift */; };
+		3C0F9BAB2B1C36A500335312 /* ProgressChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9BAA2B1C36A500335312 /* ProgressChartData.swift */; };
+		3C0F9BAD2B1C3AB400335312 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9BAC2B1C3AB400335312 /* HomeViewModel.swift */; };
+		3C0F9BB32B1C4CF500335312 /* GetSpendingChartDataUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9BB22B1C4CF500335312 /* GetSpendingChartDataUseCase.swift */; };
+		3C0F9BB62B1C4FA600335312 /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9BB52B1C4FA600335312 /* HomeRepository.swift */; };
+		3C0F9BB92B1C552300335312 /* DefaultHomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9BB82B1C552300335312 /* DefaultHomeRepository.swift */; };
+		3C0F9BBC2B1C578900335312 /* HomeLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9BBB2B1C578900335312 /* HomeLocalDataSource.swift */; };
+		3C0F9BBF2B1C5C9900335312 /* SpendingChartDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9BBE2B1C5C9900335312 /* SpendingChartDTO.swift */; };
+		3C0F9BC12B1C5FE100335312 /* RepositoryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9BC02B1C5FE100335312 /* RepositoryTask.swift */; };
+		3C0F9BC32B1C611600335312 /* ProgressChartDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9BC22B1C611600335312 /* ProgressChartDTO.swift */; };
+		3C0F9BC62B1C641B00335312 /* DefaultHomeLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9BC52B1C641B00335312 /* DefaultHomeLocalDataSource.swift */; };
+		3C0F9BC82B1C6FAB00335312 /* GetProgressChartDataUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9BC72B1C6FAB00335312 /* GetProgressChartDataUseCase.swift */; };
+		3C0F9BCF2B1C990000335312 /* TransactionsHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9BCD2B1C990000335312 /* TransactionsHistoryViewController.swift */; };
+		3C0F9BD02B1C990000335312 /* TransactionsHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0F9BCE2B1C990000335312 /* TransactionsHistoryViewController.xib */; };
+		3C0F9C232B1C9D8800335312 /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9C222B1C9D8800335312 /* AppFlowCoordinator.swift */; };
+		3C0F9C252B1C9DBA00335312 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9C242B1C9DBA00335312 /* AppDIContainer.swift */; };
+		3C0F9C282B1C9F5100335312 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9C272B1C9F5100335312 /* HomeCoordinator.swift */; };
+		3C0F9C2D2B1CA58800335312 /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9C2C2B1CA58800335312 /* HomeWireframe.swift */; };
+		3C0F9C302B1CA71A00335312 /* TransactionHistoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9C2F2B1CA71A00335312 /* TransactionHistoryCoordinator.swift */; };
+		3C0F9C322B1CA77200335312 /* TransactionsHistoryWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9C312B1CA77200335312 /* TransactionsHistoryWireframe.swift */; };
+		3C0F9C352B1CA9C500335312 /* TransactionsHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9C342B1CA9C500335312 /* TransactionsHistoryViewModel.swift */; };
+		3C0F9C372B1CBCE100335312 /* Float+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F9C362B1CBCE100335312 /* Float+Extension.swift */; };
+		3C833DBB2B1CF817002B7F77 /* MockAppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C833DBA2B1CF817002B7F77 /* MockAppFlowCoordinator.swift */; };
+		3C8F3AC42B1B9E9E00770EE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8F3AC32B1B9E9E00770EE6 /* AppDelegate.swift */; };
+		3C8F3AC62B1B9E9E00770EE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8F3AC52B1B9E9E00770EE6 /* SceneDelegate.swift */; };
+		3C8F3ACD2B1B9EA000770EE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C8F3ACC2B1B9EA000770EE6 /* Assets.xcassets */; };
+		3C8F3AD02B1B9EA000770EE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C8F3ACE2B1B9EA000770EE6 /* LaunchScreen.storyboard */; };
+		3C8F3ADB2B1B9EA100770EE6 /* FintechCleanArchitectureMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8F3ADA2B1B9EA100770EE6 /* FintechCleanArchitectureMVVMTests.swift */; };
+		3C8F3AE52B1B9EA100770EE6 /* FintechCleanArchitectureMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8F3AE42B1B9EA100770EE6 /* FintechCleanArchitectureMVVMUITests.swift */; };
+		3C8F3AE72B1B9EA100770EE6 /* FintechCleanArchitectureMVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8F3AE62B1B9EA100770EE6 /* FintechCleanArchitectureMVVMUITestsLaunchTests.swift */; };
+		3CE3EAEB2B1CEA1D007B620D /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3EAEA2B1CEA1D007B620D /* HomeViewModelTest.swift */; };
+		3CE3EAED2B1CECBD007B620D /* MockHomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3EAEC2B1CECBD007B620D /* MockHomeRepository.swift */; };
+		3CE3EAF02B1CEFDD007B620D /* MockError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3EAEF2B1CEFDD007B620D /* MockError.swift */; };
+		810D2CD6063290050943E98C /* Pods_FintechCleanArchitectureMVVM_FintechCleanArchitectureMVVMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3C9FB1793A6800DB8DF8B3 /* Pods_FintechCleanArchitectureMVVM_FintechCleanArchitectureMVVMUITests.framework */; };
+		AA80365515F171300EC737B4 /* Pods_FintechCleanArchitectureMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6C8CDF87A17D8448408FEA /* Pods_FintechCleanArchitectureMVVM.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C8F3AD72B1B9EA100770EE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C8F3AB82B1B9E9E00770EE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C8F3ABF2B1B9E9E00770EE6;
+			remoteInfo = FintechCleanArchitectureMVVM;
+		};
+		3C8F3AE12B1B9EA100770EE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C8F3AB82B1B9E9E00770EE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C8F3ABF2B1B9E9E00770EE6;
+			remoteInfo = FintechCleanArchitectureMVVM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C399FF433F752CC54E75714 /* Pods_FintechCleanArchitectureMVVMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FintechCleanArchitectureMVVMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C0F9B4D2B1C223C00335312 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3C0F9B4E2B1C223C00335312 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		3C0F9B542B1C2FCB00335312 /* SpendingChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingChartData.swift; sourceTree = "<group>"; };
+		3C0F9BA82B1C326C00335312 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		3C0F9BAA2B1C36A500335312 /* ProgressChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressChartData.swift; sourceTree = "<group>"; };
+		3C0F9BAC2B1C3AB400335312 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		3C0F9BB22B1C4CF500335312 /* GetSpendingChartDataUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSpendingChartDataUseCase.swift; sourceTree = "<group>"; };
+		3C0F9BB52B1C4FA600335312 /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
+		3C0F9BB82B1C552300335312 /* DefaultHomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeRepository.swift; sourceTree = "<group>"; };
+		3C0F9BBB2B1C578900335312 /* HomeLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLocalDataSource.swift; sourceTree = "<group>"; };
+		3C0F9BBE2B1C5C9900335312 /* SpendingChartDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingChartDTO.swift; sourceTree = "<group>"; };
+		3C0F9BC02B1C5FE100335312 /* RepositoryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTask.swift; sourceTree = "<group>"; };
+		3C0F9BC22B1C611600335312 /* ProgressChartDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressChartDTO.swift; sourceTree = "<group>"; };
+		3C0F9BC52B1C641B00335312 /* DefaultHomeLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeLocalDataSource.swift; sourceTree = "<group>"; };
+		3C0F9BC72B1C6FAB00335312 /* GetProgressChartDataUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProgressChartDataUseCase.swift; sourceTree = "<group>"; };
+		3C0F9BCD2B1C990000335312 /* TransactionsHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsHistoryViewController.swift; sourceTree = "<group>"; };
+		3C0F9BCE2B1C990000335312 /* TransactionsHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionsHistoryViewController.xib; sourceTree = "<group>"; };
+		3C0F9C222B1C9D8800335312 /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
+		3C0F9C242B1C9DBA00335312 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		3C0F9C272B1C9F5100335312 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		3C0F9C2C2B1CA58800335312 /* HomeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
+		3C0F9C2F2B1CA71A00335312 /* TransactionHistoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryCoordinator.swift; sourceTree = "<group>"; };
+		3C0F9C312B1CA77200335312 /* TransactionsHistoryWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsHistoryWireframe.swift; sourceTree = "<group>"; };
+		3C0F9C342B1CA9C500335312 /* TransactionsHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsHistoryViewModel.swift; sourceTree = "<group>"; };
+		3C0F9C362B1CBCE100335312 /* Float+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Extension.swift"; sourceTree = "<group>"; };
+		3C833DBA2B1CF817002B7F77 /* MockAppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppFlowCoordinator.swift; sourceTree = "<group>"; };
+		3C8F3AC02B1B9E9E00770EE6 /* FintechCleanArchitectureMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FintechCleanArchitectureMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C8F3AC32B1B9E9E00770EE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C8F3AC52B1B9E9E00770EE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3C8F3ACC2B1B9EA000770EE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C8F3ACF2B1B9EA000770EE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C8F3AD12B1B9EA000770EE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C8F3AD62B1B9EA100770EE6 /* FintechCleanArchitectureMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FintechCleanArchitectureMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C8F3ADA2B1B9EA100770EE6 /* FintechCleanArchitectureMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FintechCleanArchitectureMVVMTests.swift; sourceTree = "<group>"; };
+		3C8F3AE02B1B9EA100770EE6 /* FintechCleanArchitectureMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FintechCleanArchitectureMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C8F3AE42B1B9EA100770EE6 /* FintechCleanArchitectureMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FintechCleanArchitectureMVVMUITests.swift; sourceTree = "<group>"; };
+		3C8F3AE62B1B9EA100770EE6 /* FintechCleanArchitectureMVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FintechCleanArchitectureMVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3CE3EAEA2B1CEA1D007B620D /* HomeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
+		3CE3EAEC2B1CECBD007B620D /* MockHomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeRepository.swift; sourceTree = "<group>"; };
+		3CE3EAEF2B1CEFDD007B620D /* MockError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockError.swift; sourceTree = "<group>"; };
+		3F6C8CDF87A17D8448408FEA /* Pods_FintechCleanArchitectureMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FintechCleanArchitectureMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62FFDDD5BDC79C4DD8831179 /* Pods-FintechCleanArchitectureMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FintechCleanArchitectureMVVM.debug.xcconfig"; path = "Target Support Files/Pods-FintechCleanArchitectureMVVM/Pods-FintechCleanArchitectureMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		8649EF69A6744F8FA63421E3 /* Pods-FintechCleanArchitectureMVVMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FintechCleanArchitectureMVVMTests.debug.xcconfig"; path = "Target Support Files/Pods-FintechCleanArchitectureMVVMTests/Pods-FintechCleanArchitectureMVVMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C3C9FB1793A6800DB8DF8B3 /* Pods_FintechCleanArchitectureMVVM_FintechCleanArchitectureMVVMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FintechCleanArchitectureMVVM_FintechCleanArchitectureMVVMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		928B2521ADA5B2300273B9DF /* Pods-FintechCleanArchitectureMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FintechCleanArchitectureMVVM.release.xcconfig"; path = "Target Support Files/Pods-FintechCleanArchitectureMVVM/Pods-FintechCleanArchitectureMVVM.release.xcconfig"; sourceTree = "<group>"; };
+		9760461B7B0CD8D2DF38BC49 /* Pods-FintechCleanArchitectureMVVM-FintechCleanArchitectureMVVMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FintechCleanArchitectureMVVM-FintechCleanArchitectureMVVMUITests.debug.xcconfig"; path = "Target Support Files/Pods-FintechCleanArchitectureMVVM-FintechCleanArchitectureMVVMUITests/Pods-FintechCleanArchitectureMVVM-FintechCleanArchitectureMVVMUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B1F2B472B07220BE05B4CF09 /* Pods-FintechCleanArchitectureMVVM-FintechCleanArchitectureMVVMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FintechCleanArchitectureMVVM-FintechCleanArchitectureMVVMUITests.release.xcconfig"; path = "Target Support Files/Pods-FintechCleanArchitectureMVVM-FintechCleanArchitectureMVVMUITests/Pods-FintechCleanArchitectureMVVM-FintechCleanArchitectureMVVMUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BC556BB1118C69027D0A2FE8 /* Pods-FintechCleanArchitectureMVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FintechCleanArchitectureMVVMTests.release.xcconfig"; path = "Target Support Files/Pods-FintechCleanArchitectureMVVMTests/Pods-FintechCleanArchitectureMVVMTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C8F3ABD2B1B9E9E00770EE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA80365515F171300EC737B4 /* Pods_FintechCleanArchitectureMVVM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C8F3AD32B1B9EA100770EE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16586F20B5ED9AF1E34F4CEA /* Pods_FintechCleanArchitectureMVVMTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C8F3ADD2B1B9EA100770EE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				810D2CD6063290050943E98C /* Pods_FintechCleanArchitectureMVVM_FintechCleanArchitectureMVVMUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C0F9B462B1C211B00335312 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9BC92B1C98BD00335312 /* TransactionsHistory */,
+				3C0F9B472B1C212E00335312 /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3C0F9B472B1C212E00335312 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9C262B1C9F1D00335312 /* Coordinator */,
+				3C0F9B492B1C213600335312 /* Domain */,
+				3C0F9B482B1C213200335312 /* Data */,
+				3C0F9B4A2B1C213D00335312 /* Presentation */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3C0F9B482B1C213200335312 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9BC42B1C640500335312 /* DataSources */,
+				3C0F9BBD2B1C5C7A00335312 /* DTO */,
+				3C0F9BB72B1C551300335312 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3C0F9B492B1C213600335312 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9BB12B1C4CE300335312 /* UseCases */,
+				3C0F9BB42B1C4F9600335312 /* Repositories */,
+				3C0F9B532B1C2F8100335312 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3C0F9B4A2B1C213D00335312 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9B4B2B1C21FA00335312 /* View */,
+				3C0F9B4C2B1C220000335312 /* ViewModel */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3C0F9B4B2B1C21FA00335312 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9B4D2B1C223C00335312 /* HomeViewController.swift */,
+				3C0F9B4E2B1C223C00335312 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3C0F9B4C2B1C220000335312 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9BAC2B1C3AB400335312 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3C0F9B532B1C2F8100335312 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9B542B1C2FCB00335312 /* SpendingChartData.swift */,
+				3C0F9BAA2B1C36A500335312 /* ProgressChartData.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		3C0F9BA72B1C326200335312 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9BA82B1C326C00335312 /* String+Extension.swift */,
+				3C0F9C362B1CBCE100335312 /* Float+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3C0F9BB12B1C4CE300335312 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9BB22B1C4CF500335312 /* GetSpendingChartDataUseCase.swift */,
+				3C0F9BC72B1C6FAB00335312 /* GetProgressChartDataUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		3C0F9BB42B1C4F9600335312 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9BB52B1C4FA600335312 /* HomeRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		3C0F9BB72B1C551300335312 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9BB82B1C552300335312 /* DefaultHomeRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		3C0F9BBD2B1C5C7A00335312 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9BBE2B1C5C9900335312 /* SpendingChartDTO.swift */,
+				3C0F9BC22B1C611600335312 /* ProgressChartDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		3C0F9BC42B1C640500335312 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9BBB2B1C578900335312 /* HomeLocalDataSource.swift */,
+				3C0F9BC52B1C641B00335312 /* DefaultHomeLocalDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		3C0F9BC92B1C98BD00335312 /* TransactionsHistory */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9C2E2B1CA70D00335312 /* Coordinator */,
+				3C0F9BCA2B1C98D700335312 /* Presentation */,
+			);
+			path = TransactionsHistory;
+			sourceTree = "<group>";
+		};
+		3C0F9BCA2B1C98D700335312 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9C332B1CA8DF00335312 /* ViewModel */,
+				3C0F9BCB2B1C98DB00335312 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3C0F9BCB2B1C98DB00335312 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9BCD2B1C990000335312 /* TransactionsHistoryViewController.swift */,
+				3C0F9BCE2B1C990000335312 /* TransactionsHistoryViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3C0F9C262B1C9F1D00335312 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9C272B1C9F5100335312 /* HomeCoordinator.swift */,
+				3C0F9C2C2B1CA58800335312 /* HomeWireframe.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		3C0F9C292B1CA47000335312 /* DIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9C242B1C9DBA00335312 /* AppDIContainer.swift */,
+			);
+			path = DIContainer;
+			sourceTree = "<group>";
+		};
+		3C0F9C2E2B1CA70D00335312 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9C2F2B1CA71A00335312 /* TransactionHistoryCoordinator.swift */,
+				3C0F9C312B1CA77200335312 /* TransactionsHistoryWireframe.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		3C0F9C332B1CA8DF00335312 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9C342B1CA9C500335312 /* TransactionsHistoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3C833DB92B1CF80D002B7F77 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3C833DBA2B1CF817002B7F77 /* MockAppFlowCoordinator.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3C8F3AB72B1B9E9E00770EE6 = {
+			isa = PBXGroup;
+			children = (
+				3C8F3AC22B1B9E9E00770EE6 /* FintechCleanArchitectureMVVM */,
+				3C8F3AD92B1B9EA100770EE6 /* FintechCleanArchitectureMVVMTests */,
+				3C8F3AE32B1B9EA100770EE6 /* FintechCleanArchitectureMVVMUITests */,
+				3C8F3AC12B1B9E9E00770EE6 /* Products */,
+				8967AFDD0D5BAE4DE76A9338 /* Pods */,
+				8FB9A177878F66AEB0CBB3F6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3C8F3AC12B1B9E9E00770EE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C8F3AC02B1B9E9E00770EE6 /* FintechCleanArchitectureMVVM.app */,
+				3C8F3AD62B1B9EA100770EE6 /* FintechCleanArchitectureMVVMTests.xctest */,
+				3C8F3AE02B1B9EA100770EE6 /* FintechCleanArchitectureMVVMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C8F3AC22B1B9E9E00770EE6 /* FintechCleanArchitectureMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				3C8F3AF82B1C1F1100770EE6 /* Application */,
+				3C0F9B462B1C211B00335312 /* Features */,
+				3C8F3AFE2B1C1F6B00770EE6 /* Infrastructure */,
+				3C8F3AFD2B1C1F4700770EE6 /* Common */,
+				3C8F3AFC2B1C1F3E00770EE6 /* Resources */,
+			);
+			path = FintechCleanArchitectureMVVM;
+			sourceTree = "<group>";
+		};
+		3C8F3AD92B1B9EA100770EE6 /* FintechCleanArchitectureMVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C833DB92B1CF80D002B7F77 /* Application */,
+				3CE3EAEE2B1CEFD1007B620D /* Common */,
+				3CE3EA972B1CE932007B620D /* Features */,
+				3C8F3ADA2B1B9EA100770EE6 /* FintechCleanArchitectureMVVMTests.swift */,
+			);
+			path = FintechCleanArchitectureMVVMTests;
+			sourceTree = "<group>";
+		};
+		3C8F3AE32B1B9EA100770EE6 /* FintechCleanArchitectureMVVMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C8F3AE42B1B9EA100770EE6 /* FintechCleanArchitectureMVVMUITests.swift */,
+				3C8F3AE62B1B9EA100770EE6 /* FintechCleanArchitectureMVVMUITestsLaunchTests.swift */,
+			);
+			path = FintechCleanArchitectureMVVMUITests;
+			sourceTree = "<group>";
+		};
+		3C8F3AF82B1C1F1100770EE6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3C8F3AC32B1B9E9E00770EE6 /* AppDelegate.swift */,
+				3C8F3AC52B1B9E9E00770EE6 /* SceneDelegate.swift */,
+				3C0F9C222B1C9D8800335312 /* AppFlowCoordinator.swift */,
+				3C0F9C292B1CA47000335312 /* DIContainer */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3C8F3AFC2B1C1F3E00770EE6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3C8F3ACC2B1B9EA000770EE6 /* Assets.xcassets */,
+				3C8F3ACE2B1B9EA000770EE6 /* LaunchScreen.storyboard */,
+				3C8F3AD12B1B9EA000770EE6 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3C8F3AFD2B1C1F4700770EE6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9BA72B1C326200335312 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3C8F3AFE2B1C1F6B00770EE6 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F9BC02B1C5FE100335312 /* RepositoryTask.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		3CE3EA972B1CE932007B620D /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3CE3EA982B1CE93C007B620D /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3CE3EA982B1CE93C007B620D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3CE3EAEA2B1CEA1D007B620D /* HomeViewModelTest.swift */,
+				3CE3EAEC2B1CECBD007B620D /* MockHomeRepository.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3CE3EAEE2B1CEFD1007B620D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3CE3EAEF2B1CEFDD007B620D /* MockError.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8967AFDD0D5BAE4DE76A9338 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62FFDDD5BDC79C4DD8831179 /* Pods-FintechCleanArchitectureMVVM.debug.xcconfig */,
+				928B2521ADA5B2300273B9DF /* Pods-FintechCleanArchitectureMVVM.release.xcconfig */,
+				9760461B7B0CD8D2DF38BC49 /* Pods-FintechCleanArchitectureMVVM-FintechCleanArchitectureMVVMUITests.debug.xcconfig */,
+				B1F2B472B07220BE05B4CF09 /* Pods-FintechCleanArchitectureMVVM-FintechCleanArchitectureMVVMUITests.release.xcconfig */,
+				8649EF69A6744F8FA63421E3 /* Pods-FintechCleanArchitectureMVVMTests.debug.xcconfig */,
+				BC556BB1118C69027D0A2FE8 /* Pods-FintechCleanArchitectureMVVMTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8FB9A177878F66AEB0CBB3F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F6C8CDF87A17D8448408FEA /* Pods_FintechCleanArchitectureMVVM.framework */,
+				8C3C9FB1793A6800DB8DF8B3 /* Pods_FintechCleanArchitectureMVVM_FintechCleanArchitectureMVVMUITests.framework */,
+				2C399FF433F752CC54E75714 /* Pods_FintechCleanArchitectureMVVMTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C8F3ABF2B1B9E9E00770EE6 /* FintechCleanArchitectureMVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C8F3AEA2B1B9EA100770EE6 /* Build configuration list for PBXNativeTarget "FintechCleanArchitectureMVVM" */;
+			buildPhases = (
+				4AD8FCADA743A2CC3A76067A /* [CP] Check Pods Manifest.lock */,
+				3C8F3ABC2B1B9E9E00770EE6 /* Sources */,
+				3C8F3ABD2B1B9E9E00770EE6 /* Frameworks */,
+				3C8F3ABE2B1B9E9E00770EE6 /* Resources */,
+				91CAD16F7E299DC3CFE11F8C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FintechCleanArchitectureMVVM;
+			productName = FintechCleanArchitectureMVVM;
+			productReference = 3C8F3AC02B1B9E9E00770EE6 /* FintechCleanArchitectureMVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C8F3AD52B1B9EA100770EE6 /* FintechCleanArchitectureMVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C8F3AED2B1B9EA100770EE6 /* Build configuration list for PBXNativeTarget "FintechCleanArchitectureMVVMTests" */;
+			buildPhases = (
+				81246B622FA8CE3857002DC1 /* [CP] Check Pods Manifest.lock */,
+				3C8F3AD22B1B9EA100770EE6 /* Sources */,
+				3C8F3AD32B1B9EA100770EE6 /* Frameworks */,
+				3C8F3AD42B1B9EA100770EE6 /* Resources */,
+				2B97E507719A3D0291A1C499 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C8F3AD82B1B9EA100770EE6 /* PBXTargetDependency */,
+			);
+			name = FintechCleanArchitectureMVVMTests;
+			productName = FintechCleanArchitectureMVVMTests;
+			productReference = 3C8F3AD62B1B9EA100770EE6 /* FintechCleanArchitectureMVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C8F3ADF2B1B9EA100770EE6 /* FintechCleanArchitectureMVVMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C8F3AF02B1B9EA100770EE6 /* Build configuration list for PBXNativeTarget "FintechCleanArchitectureMVVMUITests" */;
+			buildPhases = (
+				5AF32248C5542BC2F1075B2E /* [CP] Check Pods Manifest.lock */,
+				3C8F3ADC2B1B9EA100770EE6 /* Sources */,
+				3C8F3ADD2B1B9EA100770EE6 /* Frameworks */,
+				3C8F3ADE2B1B9EA100770EE6 /* Resources */,
+				9B6318F79680FE11481C4A60 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C8F3AE22B1B9EA100770EE6 /* PBXTargetDependency */,
+			);
+			name = FintechCleanArchitectureMVVMUITests;
+			productName = FintechCleanArchitectureMVVMUITests;
+			productReference = 3C8F3AE02B1B9EA100770EE6 /* FintechCleanArchitectureMVVMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C8F3AB82B1B9E9E00770EE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3C8F3ABF2B1B9E9E00770EE6 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					3C8F3AD52B1B9EA100770EE6 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 3C8F3ABF2B1B9E9E00770EE6;
+					};
+					3C8F3ADF2B1B9EA100770EE6 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 3C8F3ABF2B1B9E9E00770EE6;
+					};
+				};
+			};
+			buildConfigurationList = 3C8F3ABB2B1B9E9E00770EE6 /* Build configuration list for PBXProject "FintechCleanArchitectureMVVM" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C8F3AB72B1B9E9E00770EE6;
+			productRefGroup = 3C8F3AC12B1B9E9E00770EE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C8F3ABF2B1B9E9E00770EE6 /* FintechCleanArchitectureMVVM */,
+				3C8F3AD52B1B9EA100770EE6 /* FintechCleanArchitectureMVVMTests */,
+				3C8F3ADF2B1B9EA100770EE6 /* FintechCleanArchitectureMVVMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C8F3ABE2B1B9E9E00770EE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C8F3AD02B1B9EA000770EE6 /* LaunchScreen.storyboard in Resources */,
+				3C8F3ACD2B1B9EA000770EE6 /* Assets.xcassets in Resources */,
+				3C0F9BD02B1C990000335312 /* TransactionsHistoryViewController.xib in Resources */,
+				3C0F9B502B1C223C00335312 /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C8F3AD42B1B9EA100770EE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C8F3ADE2B1B9EA100770EE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B97E507719A3D0291A1C499 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FintechCleanArchitectureMVVMTests/Pods-FintechCleanArchitectureMVVMTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FintechCleanArchitectureMVVMTests/Pods-FintechCleanArchitectureMVVMTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FintechCleanArchitectureMVVMTests/Pods-FintechCleanArchitectureMVVMTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AD8FCADA743A2CC3A76067A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FintechCleanArchitectureMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AF32248C5542BC2F1075B2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FintechCleanArchitectureMVVM-FintechCleanArchitectureMVVMUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81246B622FA8CE3857002DC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FintechCleanArchitectureMVVMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91CAD16F7E299DC3CFE11F8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FintechCleanArchitectureMVVM/Pods-FintechCleanArchitectureMVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FintechCleanArchitectureMVVM/Pods-FintechCleanArchitectureMVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FintechCleanArchitectureMVVM/Pods-FintechCleanArchitectureMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B6318F79680FE11481C4A60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FintechCleanArchitectureMVVM-FintechCleanArchitectureMVVMUITests/Pods-FintechCleanArchitectureMVVM-FintechCleanArchitectureMVVMUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FintechCleanArchitectureMVVM-FintechCleanArchitectureMVVMUITests/Pods-FintechCleanArchitectureMVVM-FintechCleanArchitectureMVVMUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FintechCleanArchitectureMVVM-FintechCleanArchitectureMVVMUITests/Pods-FintechCleanArchitectureMVVM-FintechCleanArchitectureMVVMUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C8F3ABC2B1B9E9E00770EE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C0F9B4F2B1C223C00335312 /* HomeViewController.swift in Sources */,
+				3C0F9BAD2B1C3AB400335312 /* HomeViewModel.swift in Sources */,
+				3C0F9BBF2B1C5C9900335312 /* SpendingChartDTO.swift in Sources */,
+				3C0F9BB62B1C4FA600335312 /* HomeRepository.swift in Sources */,
+				3C0F9BA92B1C326C00335312 /* String+Extension.swift in Sources */,
+				3C0F9C282B1C9F5100335312 /* HomeCoordinator.swift in Sources */,
+				3C0F9C2D2B1CA58800335312 /* HomeWireframe.swift in Sources */,
+				3C0F9BC62B1C641B00335312 /* DefaultHomeLocalDataSource.swift in Sources */,
+				3C0F9BCF2B1C990000335312 /* TransactionsHistoryViewController.swift in Sources */,
+				3C0F9BC82B1C6FAB00335312 /* GetProgressChartDataUseCase.swift in Sources */,
+				3C0F9B552B1C2FCB00335312 /* SpendingChartData.swift in Sources */,
+				3C8F3AC42B1B9E9E00770EE6 /* AppDelegate.swift in Sources */,
+				3C0F9BAB2B1C36A500335312 /* ProgressChartData.swift in Sources */,
+				3C0F9C252B1C9DBA00335312 /* AppDIContainer.swift in Sources */,
+				3C8F3AC62B1B9E9E00770EE6 /* SceneDelegate.swift in Sources */,
+				3C0F9C322B1CA77200335312 /* TransactionsHistoryWireframe.swift in Sources */,
+				3C0F9BC12B1C5FE100335312 /* RepositoryTask.swift in Sources */,
+				3C0F9C302B1CA71A00335312 /* TransactionHistoryCoordinator.swift in Sources */,
+				3C0F9C352B1CA9C500335312 /* TransactionsHistoryViewModel.swift in Sources */,
+				3C0F9BBC2B1C578900335312 /* HomeLocalDataSource.swift in Sources */,
+				3C0F9BB92B1C552300335312 /* DefaultHomeRepository.swift in Sources */,
+				3C0F9BB32B1C4CF500335312 /* GetSpendingChartDataUseCase.swift in Sources */,
+				3C0F9C372B1CBCE100335312 /* Float+Extension.swift in Sources */,
+				3C0F9BC32B1C611600335312 /* ProgressChartDTO.swift in Sources */,
+				3C0F9C232B1C9D8800335312 /* AppFlowCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C8F3AD22B1B9EA100770EE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C8F3ADB2B1B9EA100770EE6 /* FintechCleanArchitectureMVVMTests.swift in Sources */,
+				3CE3EAEB2B1CEA1D007B620D /* HomeViewModelTest.swift in Sources */,
+				3CE3EAF02B1CEFDD007B620D /* MockError.swift in Sources */,
+				3CE3EAED2B1CECBD007B620D /* MockHomeRepository.swift in Sources */,
+				3C833DBB2B1CF817002B7F77 /* MockAppFlowCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C8F3ADC2B1B9EA100770EE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C8F3AE52B1B9EA100770EE6 /* FintechCleanArchitectureMVVMUITests.swift in Sources */,
+				3C8F3AE72B1B9EA100770EE6 /* FintechCleanArchitectureMVVMUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C8F3AD82B1B9EA100770EE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C8F3ABF2B1B9E9E00770EE6 /* FintechCleanArchitectureMVVM */;
+			targetProxy = 3C8F3AD72B1B9EA100770EE6 /* PBXContainerItemProxy */;
+		};
+		3C8F3AE22B1B9EA100770EE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C8F3ABF2B1B9E9E00770EE6 /* FintechCleanArchitectureMVVM */;
+			targetProxy = 3C8F3AE12B1B9EA100770EE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C8F3ACE2B1B9EA000770EE6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C8F3ACF2B1B9EA000770EE6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C8F3AE82B1B9EA100770EE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C8F3AE92B1B9EA100770EE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C8F3AEB2B1B9EA100770EE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62FFDDD5BDC79C4DD8831179 /* Pods-FintechCleanArchitectureMVVM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HMMWHN78KV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FintechCleanArchitectureMVVM/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jehnsenHirenaKane.FintechCleanArchitectureMVVM.FintechCleanArchitectureMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C8F3AEC2B1B9EA100770EE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 928B2521ADA5B2300273B9DF /* Pods-FintechCleanArchitectureMVVM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HMMWHN78KV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FintechCleanArchitectureMVVM/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jehnsenHirenaKane.FintechCleanArchitectureMVVM.FintechCleanArchitectureMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3C8F3AEE2B1B9EA100770EE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8649EF69A6744F8FA63421E3 /* Pods-FintechCleanArchitectureMVVMTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HMMWHN78KV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jehnsenHirenaKane.FintechCleanArchitectureMVVM.FintechCleanArchitectureMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FintechCleanArchitectureMVVM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FintechCleanArchitectureMVVM";
+			};
+			name = Debug;
+		};
+		3C8F3AEF2B1B9EA100770EE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC556BB1118C69027D0A2FE8 /* Pods-FintechCleanArchitectureMVVMTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HMMWHN78KV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jehnsenHirenaKane.FintechCleanArchitectureMVVM.FintechCleanArchitectureMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FintechCleanArchitectureMVVM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FintechCleanArchitectureMVVM";
+			};
+			name = Release;
+		};
+		3C8F3AF12B1B9EA100770EE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9760461B7B0CD8D2DF38BC49 /* Pods-FintechCleanArchitectureMVVM-FintechCleanArchitectureMVVMUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HMMWHN78KV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jehnsenHirenaKane.FintechCleanArchitectureMVVM.FintechCleanArchitectureMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FintechCleanArchitectureMVVM;
+			};
+			name = Debug;
+		};
+		3C8F3AF22B1B9EA100770EE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1F2B472B07220BE05B4CF09 /* Pods-FintechCleanArchitectureMVVM-FintechCleanArchitectureMVVMUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HMMWHN78KV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jehnsenHirenaKane.FintechCleanArchitectureMVVM.FintechCleanArchitectureMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FintechCleanArchitectureMVVM;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C8F3ABB2B1B9E9E00770EE6 /* Build configuration list for PBXProject "FintechCleanArchitectureMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C8F3AE82B1B9EA100770EE6 /* Debug */,
+				3C8F3AE92B1B9EA100770EE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C8F3AEA2B1B9EA100770EE6 /* Build configuration list for PBXNativeTarget "FintechCleanArchitectureMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C8F3AEB2B1B9EA100770EE6 /* Debug */,
+				3C8F3AEC2B1B9EA100770EE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C8F3AED2B1B9EA100770EE6 /* Build configuration list for PBXNativeTarget "FintechCleanArchitectureMVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C8F3AEE2B1B9EA100770EE6 /* Debug */,
+				3C8F3AEF2B1B9EA100770EE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C8F3AF02B1B9EA100770EE6 /* Build configuration list for PBXNativeTarget "FintechCleanArchitectureMVVMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C8F3AF12B1B9EA100770EE6 /* Debug */,
+				3C8F3AF22B1B9EA100770EE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C8F3AB82B1B9E9E00770EE6 /* Project object */;
+}

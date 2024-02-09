@@ -1,0 +1,6 @@
+framework module Pods_FintechCleanArchitectureMVVM_FintechCleanArchitectureMVVMUITests {
+  umbrella header "Pods-FintechCleanArchitectureMVVM-FintechCleanArchitectureMVVMUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

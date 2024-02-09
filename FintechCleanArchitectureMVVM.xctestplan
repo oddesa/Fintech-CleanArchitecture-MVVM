@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "9AC6A61D-D6D2-42BE-9813-3D070DBC120B",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:FintechCleanArchitectureMVVM.xcodeproj",
+      "identifier" : "3C8F3ABF2B1B9E9E00770EE6",
+      "name" : "FintechCleanArchitectureMVVM"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:FintechCleanArchitectureMVVM.xcodeproj",
+        "identifier" : "3C8F3AD52B1B9EA100770EE6",
+        "name" : "FintechCleanArchitectureMVVMTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:FintechCleanArchitectureMVVM.xcodeproj",
+        "identifier" : "3C8F3ADF2B1B9EA100770EE6",
+        "name" : "FintechCleanArchitectureMVVMUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

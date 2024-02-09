@@ -1,0 +1,6 @@
+framework module Pods_FintechCleanArchitectureMVVM {
+  umbrella header "Pods-FintechCleanArchitectureMVVM-umbrella.h"
+
+  export *
+  module * { export * }
+}
